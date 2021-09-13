@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        tit= 'a';
+        desc= 'b';
+        itemJsonArray = [];
+        itemJsonArray.push([tit, desc]);
+        itemJsonArray.push(['bc', 'db']);
+        console.log(itemJsonArray);
+        str= JSON.stringify(itemJsonArray);
+        console.log(str)
+        itemJsonArray.forEach(element => {
+            console.log(element[0])
+            console.log(element[1])
+        });
+
+    </script>
+</body>
+</html>
